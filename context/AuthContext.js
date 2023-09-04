@@ -1,3 +1,4 @@
+"use client"
 import { useContext , createContext ,useState, useEffect} from "react";
 import { signInWithPopup,signOut,onAuthStateChanged,GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../Auth/Firebase";
@@ -6,7 +7,7 @@ import { auth } from "../Auth/Firebase";
 const AuthContext = createContext();
 
 export const AuthContextProvider = ({children}) =>{
-    const [user,setUser] = useState()
+    const [user, setUser] = useState()
 
 
     const googleSignIn =()=>{

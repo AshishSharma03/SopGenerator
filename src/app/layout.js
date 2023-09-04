@@ -1,4 +1,6 @@
 
+import ThemeRegistry from '../../components/Theme/ThemeRegistry'
+import { AuthContextProvider } from '../../context/AuthContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -12,8 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     
+    <ThemeRegistry>
+    <AuthContextProvider>
+
       <body className={inter.className} >{children}</body>
+    </AuthContextProvider>
+      </ThemeRegistry>
        
     </html>
   )

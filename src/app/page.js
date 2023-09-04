@@ -316,8 +316,7 @@ export default function Home() {
   });
 
   return (
-    <ThemeRegistry>
-    <AuthContextProvider>
+   
     <Box>
       <Navbar />
       <Container>
@@ -784,7 +783,5 @@ export default function Home() {
         </Dialog>
       </Container>
     </Box>
-    </AuthContextProvider>
-    </ThemeRegistry>
   );
 }
