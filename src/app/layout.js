@@ -1,4 +1,3 @@
-
 import ThemeRegistry from '../../components/Theme/ThemeRegistry'
 import { AuthContextProvider } from '../../context/AuthContext'
 import './globals.css'
