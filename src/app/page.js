@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import { AuthContextProvider } from '../../context/AuthContext'
 import {
   Box,
   Container,
@@ -315,6 +316,8 @@ export default function Home() {
   });
 
   return (
+    <ThemeRegistry>
+    <AuthContextProvider>
     <Box>
       <Navbar />
       <Container>
@@ -781,5 +784,7 @@ export default function Home() {
         </Dialog>
       </Container>
     </Box>
+    </AuthContextProvider>
+    </ThemeRegistry>
   );
 }
